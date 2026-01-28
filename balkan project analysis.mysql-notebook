@@ -1,0 +1,706 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "\\about\nUSE mydb;\nSELECT*FROM population2011\nSELECT*FROM population\nSELECT COUNT(*),  Country FROM population2011\nGROUP BY Country \nHAVING COUNT(*)>= 2\nORDER BY COUNT(*);\n\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 10,
+                    "column": 1
+                },
+                "position": {
+                    "lineNumber": 10,
+                    "column": 1
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 4,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 102
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 1,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "content": "Welcome to the MySQL Shell - DB Notebook.\n\nPress Ctrl+Enter to execute the code block.\n\nExecute \\sql to switch to SQL, \\js to JavaScript and \\ts to TypeScript mode.\nExecute \\help or \\? for help;",
+                            "language": "ansi"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 2,
+                "end": 2,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "6b01e163-59f2-44c8-fe25-43450d0fd92d",
+                            "content": "OK, 0 records retrieved in 0.972ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 9
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 3,
+                "end": 3,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "14d101fa-9d0c-4938-ac63-60b35a4bcde8"
+                    ]
+                },
+                "currentHeight": 396.79998779296875,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 26
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "12858cd0-c1a7-4a46-cd7b-291c96cad178",
+                    "resultId": "14d101fa-9d0c-4938-ac63-60b35a4bcde8",
+                    "rows": [
+                        {
+                            "0": "Beograd",
+                            "1": 1343814,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Zagreb",
+                            "1": 769000,
+                            "2": "Croatia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Skopje",
+                            "1": 506926,
+                            "2": "North Macedonia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Sarajevo",
+                            "1": 438443,
+                            "2": "Bosnia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Ljubljana",
+                            "1": 363271,
+                            "2": "Slovenia",
+                            "3": "EU",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Novi Sad",
+                            "1": 338189,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Split",
+                            "1": 266761,
+                            "2": "Croatia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Nis",
+                            "1": 182000,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Podgorica",
+                            "1": 150977,
+                            "2": "Montenegro",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Rijeka",
+                            "1": 188000,
+                            "2": "Croatia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Kragujevac",
+                            "1": 147000,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Banja Luka",
+                            "1": 138000,
+                            "2": "Bosnia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Subotica",
+                            "1": 105681,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Maribor",
+                            "1": 95171,
+                            "2": "Slovenia",
+                            "3": "EU",
+                            "4": "No"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "City",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Population_2011",
+                            "field": "1",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Country",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "FTA",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Capital",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 14 records retrieved in 3.19ms"
+                    },
+                    "totalRowCount": 14,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT*FROM population2011",
+                    "updatable": false,
+                    "fullTableName": "population2011"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 4,
+                "end": 4,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "73991c9f-06e5-4c6d-e1ac-f61a4209c4b8"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 22
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "12858cd0-c1a7-4a46-cd7b-291c96cad178",
+                    "resultId": "73991c9f-06e5-4c6d-e1ac-f61a4209c4b8",
+                    "rows": [
+                        {
+                            "0": "Beograd",
+                            "1": 1380327,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Zagreb",
+                            "1": 767000,
+                            "2": "Croatia",
+                            "3": "EU",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Skopje",
+                            "1": 526502,
+                            "2": "North Macedonia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Sarajevo",
+                            "1": 419000,
+                            "2": "Bosnia",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Ljubljana",
+                            "1": 381435,
+                            "2": "Slovenia",
+                            "3": "EU",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Novi Sad",
+                            "1": 369169,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Split",
+                            "1": 251927,
+                            "2": "Croatia",
+                            "3": "EU",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Nis",
+                            "1": 187000,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Podgorica",
+                            "1": 172000,
+                            "2": "Montenegro",
+                            "3": "CEFTA",
+                            "4": "Yes"
+                        },
+                        {
+                            "0": "Rijeka",
+                            "1": 168000,
+                            "2": "Croatia",
+                            "3": "EU",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Kragujevac",
+                            "1": 146000,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Banja Luka",
+                            "1": 138000,
+                            "2": "Bosnia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Subotica",
+                            "1": 94228,
+                            "2": "Serbia",
+                            "3": "CEFTA",
+                            "4": "No"
+                        },
+                        {
+                            "0": "Maribor",
+                            "1": 97019,
+                            "2": "Slovenia",
+                            "3": "EU",
+                            "4": "No"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "City",
+                            "field": "0",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Population_2021",
+                            "field": "1",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Country",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "FTA",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Capital",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 14 records retrieved in 1.78ms"
+                    },
+                    "totalRowCount": 14,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT*FROM population",
+                    "updatable": false,
+                    "fullTableName": "population"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 5,
+                "end": 9,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "0e5c2925-56b6-4d22-983d-2eadf220299d"
+                    ]
+                },
+                "currentHeight": 162.1875,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 102
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 102,
+                            "length": 1
+                        },
+                        "contentStart": 101,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "12858cd0-c1a7-4a46-cd7b-291c96cad178",
+                    "resultId": "0e5c2925-56b6-4d22-983d-2eadf220299d",
+                    "rows": [
+                        {
+                            "0": 2,
+                            "1": "Bosnia"
+                        },
+                        {
+                            "0": 2,
+                            "1": "Slovenia"
+                        },
+                        {
+                            "0": 3,
+                            "1": "Croatia"
+                        },
+                        {
+                            "0": 5,
+                            "1": "Serbia"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "COUNT(*)",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "Country",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 4 records retrieved in 2.687ms"
+                    },
+                    "totalRowCount": 4,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT COUNT(*),  Country FROM population2011\nGROUP BY Country \nHAVING COUNT(*)>= 2\nORDER BY COUNT(*)",
+                    "updatable": false,
+                    "fullTableName": ""
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 10,
+                "end": 10,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 0
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
