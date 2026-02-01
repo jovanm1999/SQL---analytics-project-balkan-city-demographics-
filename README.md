@@ -14,7 +14,8 @@ First, I select the database and verify the data import.
 
 ```sql
 USE mydb;
-SELECT*FROM population;```
+SELECT*FROM population;
+```
 
 ### 2. Analysis of Urban Concentration
 
@@ -24,6 +25,8 @@ Identifying how many countries have 2 or more cities within the most populous ci
 SELECT COUNT(*),  Country FROM population2011
 GROUP BY Country 
 HAVING COUNT(*)>= 2
-ORDER BY COUNT(*);``` 
+ORDER BY COUNT(*);
+``` 
+
 
 
