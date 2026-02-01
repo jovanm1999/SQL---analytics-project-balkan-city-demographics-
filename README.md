@@ -11,8 +11,8 @@ I am analyzing this dataset to identify urban trends in the Balkan region.
 
 ### 1. Data Connection
 First, I select the database and verify the data import.
-```sql
 
+```sql
 USE mydb;
 SELECT*FROM population;```
 
@@ -25,4 +25,5 @@ SELECT COUNT(*),  Country FROM population2011
 GROUP BY Country 
 HAVING COUNT(*)>= 2
 ORDER BY COUNT(*);``` 
+
 
